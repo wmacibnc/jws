@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jnlp
+    spec="6.0+"
+    codebase="http://localhost:8080/JavaAppStart/"
+    href="desktop.jnlp">
+    <information>
+        <title>My First Java Web Start - Desktop</title>
+        <vendor>Programando com Java</vendor>
+        <homepage href="http://mballem.wordpress.com/"/>
+        <description kind="short">
+            Sistema biometria
+         </description>
+        <offline-allowed/>
+    </information>
+    <security>  
+        <all-permissions />  
+    </security>
+    <resources>
+        <j2se version="1.5+"/>
+        <jar href="http://localhost:8080/JavaAppStart/appDesktop.jar"
+                  main="true" />
+        <jar href="NBioBSPJNI.jar"
+                  main="false" />
+    </resources>
+    <application-desc
+        main-class="com.wp.mb.appdesktop.AppDesktop">
+        <param name='url' value='http://localhost:8080/projetos2'>
+    </application-desc>  
+    <update check="always"/>
+</jnlp>
